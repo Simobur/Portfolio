@@ -55,16 +55,26 @@ body {
   padding: 1.2rem 2.4rem;
   border-radius: 4px;
   flex: 0 0 auto;
+  transition: all 0.3s;
 }
 
 .link-nav:last-child {
   color: #fff;
   background-color: #ff922b;
   font-weight: 600;
+  transition: all 0.3s;
 }
 
 .link-nav:hover,
 .link-nav:active {
+  background-color: #ff922b;
+  color: #fff;
+}
+
+.link-nav:last-child:hover {
+  color: #fff;
+  background-color: #cc7522;
+  font-weight: 600;
 }
 
 /* ///////////////////*/
@@ -80,7 +90,7 @@ body {
   gap: 3.2rem;
   border-radius: 14px;
   overflow: hidden;
-  border: 1px solid #16451f;
+  /* border: 1px solid #16451f; */
 }
 
 .text-box,
@@ -104,11 +114,37 @@ body {
   font-weight: 500;
   letter-spacing: -0.3rem;
   line-height: 0.8;
+  margin-bottom: 3.2rem;
 }
+
+/* .hello-header span {
+  color: #ff922b;
+} */
 
 .hello-text {
   font-size: 3.6rem;
   color: #55a165;
+  line-height: 1.3;
+  margin-bottom: 6rem;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff922b;
+  border-radius: 4px;
+  font-weight: 600;
+  width: 35%;
+  text-align: center;
+  padding: 1.6rem 3.2rem;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #cc7522;
 }
 
 .img-box {
@@ -157,7 +193,7 @@ body {
 
 .section-about {
   text-align: center;
-  margin-bottom: 9.6rem;
+  margin-bottom: 6rem;
 }
 
 .about-header {
@@ -190,11 +226,37 @@ body {
 .stat {
   border: 2px solid #16451f;
   width: 50%;
-  height: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  min-height: 25rem;
+  text-align: center;
+  /* justify-content: space-between; */
+}
+
+.stat-icon {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 1.8rem;
+  justify-self: start;
+  margin-top: 1.2rem;
+}
+
+.stat-header {
+  font-size: 3.2rem;
+  font-weight: 500;
+  letter-spacing: -1.5px;
+  margin-bottom: 2.4rem;
+}
+
+.stat-text {
+  font-size: 1.6rem;
+  margin-bottom: 2.2rem;
+  line-height: 1.5;
+}
+
+.color-orange {
+  color: #cc7522;
 }
 /* /////////////////////////*/
 /* Seciotn 6 - Personality /*/
