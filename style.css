@@ -160,10 +160,6 @@ body {
   margin-bottom: 9.6rem;
 }
 
-.about-background {
-  background-image: linear-gradient(to left, #22582c49, #16451f);
-}
-
 .about-header {
   font-size: 5.4rem;
   font-weight: 500;
@@ -175,4 +171,85 @@ body {
   font-size: 2.2rem;
   font-weight: 400;
   line-height: 1.7;
+}
+
+/* ////////////////////////*/
+/* Seciotn 5 - Statistics /*/
+/* ////////////////////////*/
+
+.section-stats {
+  margin-bottom: 9.6rem;
+}
+
+.stats {
+  display: flex;
+  gap: 3.2rem;
+  justify-content: space-around;
+}
+
+.stat {
+  border: 2px solid #16451f;
+  width: 50%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* /////////////////////////*/
+/* Seciotn 6 - Personality /*/
+/* /////////////////////////*/
+
+.section-personalities {
+  margin-bottom: 9.6rem;
+}
+
+.personalities-flex {
+  display: flex;
+  gap: 3.2rem;
+  background-color: rgba(22, 69, 31, 0.95);
+  border-radius: 14px;
+  color: #eaf3ec;
+  padding: 1.6rem;
+  min-height: 40vh;
+}
+
+.personalities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  padding-top: 5.2rem;
+}
+
+.personalities-text {
+  width: 30%;
+}
+
+.personalities-header {
+  font-size: 4.2rem;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  margin-bottom: 2.2rem;
+}
+
+.personalities-paragraph {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #95c59f;
+  line-height: 1.5;
+}
+
+.personalities-grid {
+  width: 70%;
+}
+
+.personality-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #95c59f;
+}
+
+.personality-text {
+  font-size: 1.8rem;
+  text-transform: uppercase;
 }
