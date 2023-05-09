@@ -1,0 +1,114 @@
+/* Below 992px - 780px */
+@media (max-width: 62em) {
+  .section-nav {
+    margin: 0.8rem auto;
+    margin-bottom: 2.2rem;
+  }
+  .section-hello {
+    margin-bottom: 7.2rem;
+  }
+  .section-about {
+    margin-bottom: 2.2rem;
+  }
+  .section-stats {
+    margin-bottom: 7.2rem;
+  }
+  .section-personalities {
+    margin-bottom: 4.8rem;
+  }
+  .section-portfolio {
+    margin-bottom: 4.2rem;
+  }
+  .section-logos {
+    margin-bottom: 4.2rem;
+  }
+  .section-cv {
+    margin-bottom: 2.6rem;
+  }
+
+  /* Section hello and NAV */
+
+  .logo-nav {
+    height: 4rem;
+  }
+
+  .text-box,
+  .img-box {
+    min-height: 30rem;
+  }
+
+  .hello-header {
+    font-size: 4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .hello-text {
+    font-size: 2.2rem;
+    /* margin-bottom: 1.2rem; */
+  }
+
+  .hello-img {
+    width: 45rem;
+  }
+
+  /* Section about  */
+
+  .about-header {
+    font-size: 4rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .about-text {
+    font-size: 1.6rem;
+  }
+
+  /* Section about */
+
+  .stat-icon {
+    height: 6rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .stat-header {
+    font-size: 2.2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .stat-text {
+    font-size: 1.4rem;
+  }
+
+  /* Section Personalities */
+
+  .personalities-grid {
+    gap: 1.4rem;
+  }
+
+  .personality {
+    margin-bottom: 0;
+  }
+
+  /* Section portfolio and logos*/
+
+  .portfolio-header {
+    font-size: 3.2rem;
+  }
+
+  .project-text {
+    font-size: 1.2rem;
+  }
+
+  .project-header--main {
+    font-size: 2.2rem;
+  }
+
+  .project-text--main {
+    font: 1.6rem;
+  }
+  .logo {
+    height: 4rem;
+  }
+}
+
+@media (max-width: 49em) {
+}
