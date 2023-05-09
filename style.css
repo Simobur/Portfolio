@@ -137,7 +137,7 @@ body {
   background-color: #ff922b;
   border-radius: 4px;
   font-weight: 600;
-  width: 35%;
+  width: 20rem;
   text-align: center;
   padding: 1.6rem 3.2rem;
   transition: all 0.3s;
@@ -465,7 +465,6 @@ body {
 }
 
 .project--main:hover {
-  /* transform: translateY(-1rem); */
   box-shadow: 4px 8px 32px rgba(9, 28, 12, 0.3);
   scale: 1.05;
   background-color: #fff;
@@ -507,23 +506,23 @@ body {
   margin: 0 auto;
 }
 
-.btn--cv-box:hover .left {
+.container--portfolio:hover .left {
   rotate: 180deg;
   left: 2%;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 
-.btn--cv-box:hover .right {
+.container--portfolio:hover .right {
   rotate: 0deg;
-  transition: all 0.5s;
+  transition: all 0.2s;
   right: 2%;
 }
 
 .left {
   left: 0;
-  rotate: 200deg;
+  rotate: 210deg;
 }
 .right {
-  rotate: 20deg;
+  rotate: 30deg;
   right: 0;
 }
