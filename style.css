@@ -20,6 +20,7 @@ body {
 
 .container {
   width: 80%;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
@@ -30,6 +31,7 @@ body {
 .section-nav {
   margin: 1.8rem auto;
   width: 90%;
+  max-width: 140rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
