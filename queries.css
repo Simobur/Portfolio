@@ -1,4 +1,6 @@
-/* Below 992px - 780px */
+/* /////////////////////////// */
+/* Width between: 992px - 780px */
+/* /////////////////////////// */
 @media (max-width: 62em) {
   .section-nav {
     margin: 0.8rem auto;
@@ -109,6 +111,112 @@
     height: 4rem;
   }
 }
+/* /////////////////////////// */
+/* Width between: 780px - 580px */
+/* /////////////////////////// */
 
 @media (max-width: 49em) {
+  .container {
+    width: 95%;
+  }
+  .section-hello {
+    margin-bottom: 5.2rem;
+  }
+  .section-about {
+    margin-bottom: 2.2rem;
+  }
+  .section-stats {
+    margin-bottom: 1.2rem;
+  }
+  .section-personalities {
+    margin-bottom: 4.8rem;
+  }
+  .section-portfolio {
+    margin-bottom: 1.6rem;
+  }
+  .section-logos {
+    margin-bottom: 1.2rem;
+  }
+  .section-cv {
+    margin-bottom: 2.6rem;
+  }
+
+  .links-nav {
+    display: none;
+  }
+
+  .btn-nav {
+    display: grid;
+  }
+
+  .section-about {
+    margin-bottom: 0;
+  }
+
+  .about-header {
+    font-size: 3.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .about-text {
+    font-size: 1.4rem;
+  }
+
+  .stat-icon {
+    height: 4rem;
+  }
+
+  .stat-header {
+    font-size: 1.6rem;
+  }
+
+  .stat-text {
+    font-size: 1.2rem;
+  }
+
+  .stats {
+    gap: 1.2rem;
+  }
+
+  .stat {
+    padding: 0;
+  }
+
+  .personalities-flex {
+    gap: 2.2rem;
+  }
+  .personalities-header {
+    font-size: 3.2rem;
+  }
+
+  .personalities-paragraph {
+    font-size: 1.8rem;
+  }
+
+  .personalities-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .personality-icon {
+    height: 4rem;
+  }
+
+  .personality-text {
+    padding: 0.6rem;
+    font-size: 1.4rem;
+  }
+
+  .portfolio-grid {
+    gap: 1.2rem;
+    padding-top: 0;
+  }
+
+  .logo {
+    height: 2.8rem;
+  }
+}
+/* /////////////////////////// */
+/* Width between: 580px  */
+/* /////////////////////////// */
+@media (max-width: 36.5em) {
 }

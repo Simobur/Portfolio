@@ -79,6 +79,14 @@ body {
   font-weight: 600;
 }
 
+.btn-nav {
+  display: none;
+}
+
+.btn-nav-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+}
 /* ///////////////////*/
 /* Seciotn - Hello /*/
 /* ///////////////////*/
