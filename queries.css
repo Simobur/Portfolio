@@ -219,6 +219,14 @@
 /* Width between: 580px  */
 /* /////////////////////////// */
 @media (max-width: 36.5em) {
+  .section-portfolio {
+    margin-bottom: 2.2rem;
+  }
+
+  .section-logos {
+    margin-bottom: 2.2rem;
+  }
+
   .hello-box {
     gap: 1.2rem;
   }
@@ -266,5 +274,50 @@
 
   .personality {
     text-align: center;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    gap: 2.2rem;
+  }
+
+  .portfolio-header {
+    grid-column: span 6;
+    margin-bottom: 0;
+  }
+
+  .project--1,
+  .project--3,
+  .project--4 {
+    grid-column: span 2;
+  }
+
+  .project--main {
+    grid-column: 2/6;
+    grid-row: 2;
+  }
+
+  .logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    gap: 1.8rem;
+  }
+
+  .logo-link:nth-child(odd) {
+    text-align: end;
+  }
+  .logo {
+    height: 4rem;
+  }
+
+  .btn--cv-box {
+    width: 75%;
+  }
+
+  .btn--cv {
+    font-size: 2.2rem;
+    padding: 0.8rem 1.6rem;
   }
 }
