@@ -11,11 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script type="module" defer src="script.js"></script>
 
     <title>Simon Burek Portfolio Page</title>
   </head>
   <body>
-    <section class="section-nav">
+    <section class="section-nav fixed">
       <img class="logo-nav" src="logo.png" alt="company logo SB with buble" />
       <nav class="links-nav">
         <a class="link-nav" href="#about">About Me</a>
@@ -27,6 +28,24 @@
       </nav>
       <nav class="btn-nav">
         <ion-icon class="btn-nav-icon" name="menu-outline"></ion-icon>
+      </nav>
+    </section>
+
+    <section class="section-nav-mobile hidden">
+      <nav class="links-nav-mobile">
+        <a class="link-nav-mobile" href="#about">About Me</a>
+        <a class="link-nav-mobile" href="#personal">Personalites</a>
+        <a class="link-nav-mobile" href="#portfolio">Portfolio</a>
+        <a
+          class="link-nav-mobile"
+          href="Simon Burek CV.pdf"
+          download
+          target="_blank"
+          >Download CV</a
+        >
+        <nav class="btn-nav-close">
+          <ion-icon class="btn-nav-icon" name="close-outline"></ion-icon>
+        </nav>
       </nav>
     </section>
 
