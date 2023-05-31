@@ -463,15 +463,37 @@ body {
   grid-column: 4/8;
   grid-row: 1/3;
   height: 100%;
+  min-height: 35rem;
   position: relative;
   padding: 1.8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
   border-radius: 14px;
   box-shadow: 4px 8px 8px rgba(9, 28, 12, 0.3);
   transition: all 0.3s;
+  overflow: hidden;
+}
+
+.projects--main {
+  display: flex;
+  justify-content: center;
+}
+
+.project--main--1 {
+  padding: 2rem;
+  transform: translateX(0%);
+  position: absolute;
+  transition: all 1s;
+}
+.project--main--2 {
+  padding: 2rem;
+  transform: translateX(100%);
+  position: absolute;
+  transition: all 1s;
+}
+.project--main--3 {
+  padding: 2rem;
+  transform: translateX(200%);
+  position: absolute;
+  transition: all 1s;
 }
 
 .project-link--main:link,
@@ -519,13 +541,11 @@ body {
 .btn--left {
   left: 0;
   bottom: 50%;
-  transform: translate(-50%);
 }
 
 .btn--right {
   right: 0;
   bottom: 50%;
-  transform: translate(50%);
 }
 
 .btn-icon {

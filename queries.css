@@ -321,3 +321,17 @@
     padding: 0.8rem 1.6rem;
   }
 }
+/* /////////////////////////// */
+/* Width below: 420px */
+/* /////////////////////////// */
+
+@media (max-width: 26.5em) {
+  .project--main {
+    grid-column: 1/7;
+    height: 40rem;
+  }
+
+  .project--main:hover {
+    scale: 1;
+  }
+}
