@@ -44,9 +44,16 @@ const prevSlide = function () {
   );
 };
 
-window.addEventListener("keydown", function (e) {
+document.addEventListener("keydown", function (e) {
   if (e.key === "ArrowRight") nextSlide();
   if (e.key === "ArrowLeft") prevSlide();
+});
+
+sectionPortfolio.addEventListener("swiped-left", function () {
+  nextSlide();
+});
+sectionPortfolio.addEventListener("swiped-right", function () {
+  prevSlide();
 });
 
 btnRight.addEventListener("click", function () {
