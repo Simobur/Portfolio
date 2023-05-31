@@ -100,7 +100,7 @@ body {
 }
 
 .hidden {
-  display: none;
+  visibility: hidden;
   filter: opacity(0);
 }
 

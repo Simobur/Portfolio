@@ -8,16 +8,19 @@ const slides = document.querySelectorAll(".slide");
 
 btnNav.addEventListener("click", function () {
   mobileNav.classList.toggle("hidden");
+  btnNav.classList.toggle("hidden");
 });
 
 btnClose.addEventListener("click", function () {
   mobileNav.classList.toggle("hidden");
+  btnNav.classList.toggle("hidden");
 });
 
 linkNav.forEach((link) =>
   link.addEventListener("click", function () {
     console.log("click");
     mobileNav.classList.add("hidden");
+    btnNav.classList.remove("hidden");
   })
 );
 
