@@ -57,8 +57,8 @@ sectionPortfolio.addEventListener("touchstart", function (e) {
 
 sectionPortfolio.addEventListener("touchend", function (e) {
   touchEnd = e.changedTouches[0].screenX;
-  if (touchStart > 1.05 * touchEnd) nextSlide();
-  if (1.05 * touchStart < touchEnd) prevSlide();
+  if (touchStart > 1.1 * touchEnd) nextSlide();
+  if (1.1 * touchStart < touchEnd) prevSlide();
 });
 
 btnRight.addEventListener("click", function () {
