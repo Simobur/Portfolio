@@ -5,7 +5,7 @@ const linkNav = document.querySelectorAll(".link-nav-mobile");
 const btnLeft = document.querySelector(".btn--left");
 const btnRight = document.querySelector(".btn--right");
 const slides = document.querySelectorAll(".slide");
-const sectionPortfolio = document.querySelector(".section-portfolio");
+const sectionPortfolio = document.querySelector(".project--main");
 
 btnNav.addEventListener("click", function () {
   mobileNav.classList.toggle("hidden");
@@ -49,11 +49,16 @@ document.addEventListener("keydown", function (e) {
   if (e.key === "ArrowLeft") prevSlide();
 });
 
-sectionPortfolio.addEventListener("swiped-left", function () {
-  nextSlide();
+let touchStart, touchEnd;
+
+sectionPortfolio.addEventListener("touchstart", function (e) {
+  touchStart = e.changedTouches[0].screenX;
 });
-sectionPortfolio.addEventListener("swiped-right", function () {
-  prevSlide();
+
+sectionPortfolio.addEventListener("touchend", function (e) {
+  touchEnd = e.changedTouches[0].screenX;
+  if (touchStart > 1.05 * touchEnd) nextSlide();
+  if (1.05 * touchStart < touchEnd) prevSlide();
 });
 
 btnRight.addEventListener("click", function () {
