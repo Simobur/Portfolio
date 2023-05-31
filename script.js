@@ -5,6 +5,7 @@ const linkNav = document.querySelectorAll(".link-nav-mobile");
 const btnLeft = document.querySelector(".btn--left");
 const btnRight = document.querySelector(".btn--right");
 const slides = document.querySelectorAll(".slide");
+const sectionPortfolio = document.querySelector(".section-portfolio");
 
 btnNav.addEventListener("click", function () {
   mobileNav.classList.toggle("hidden");
@@ -26,20 +27,32 @@ linkNav.forEach((link) =>
 
 let currSlide = 1;
 
-btnRight.addEventListener("click", function () {
+const nextSlide = function () {
   currSlide++;
   if (currSlide === slides.length + 1) currSlide = 1;
   slides.forEach((slide, i) => {
     slide.style.transform = `translateX(${100 * (i - currSlide + 1)}%)`;
   });
-  console.log(currSlide);
-});
+};
 
-btnLeft.addEventListener("click", function () {
+const prevSlide = function () {
   currSlide--;
   if (currSlide < 1) currSlide = slides.length;
   slides.forEach(
     (slide, i) =>
       (slide.style.transform = `translateX(${100 * (i - currSlide + 1)}%)`)
   );
+};
+
+window.addEventListener("keydown", function (e) {
+  if (e.key === "ArrowRight") nextSlide();
+  if (e.key === "ArrowLeft") prevSlide();
+});
+
+btnRight.addEventListener("click", function () {
+  nextSlide();
+});
+
+btnLeft.addEventListener("click", function () {
+  prevSlide();
 });
