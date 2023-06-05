@@ -496,6 +496,24 @@ body {
   position: absolute;
   transition: all 1s;
 }
+.project--main--4 {
+  padding: 2rem;
+  transform: translateX(300%);
+  position: absolute;
+  transition: all 1s;
+}
+.project--main--5 {
+  padding: 2rem;
+  transform: translateX(400%);
+  position: absolute;
+  transition: all 1s;
+}
+.project--main--6 {
+  padding: 2rem;
+  transform: translateX(500%);
+  position: absolute;
+  transition: all 1s;
+}
 
 .project-link--main:link,
 .project-link--main:visited {
